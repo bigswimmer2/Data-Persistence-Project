@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
 
     public void CurrentUser()
     {
-        Debug.Log(inputField.text);
         DataManager.instance.currentName = inputField.text;
     }
 

@@ -62,6 +62,15 @@ public class DataManager : MonoBehaviour
         }
     }
 
+    public void DeleteData()
+    {
+        string path = Application.persistentDataPath + "/savefile.json";
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+        }
+    }
+
     public void LoadCurrentName(string name)
     {
         CurrentData data = new CurrentData();
