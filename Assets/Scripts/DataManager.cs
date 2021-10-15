@@ -69,6 +69,7 @@ public class DataManager : MonoBehaviour
         {
             File.Delete(path);
         }
+        LoadBestScore();
     }
 
     public void LoadCurrentName(string name)
